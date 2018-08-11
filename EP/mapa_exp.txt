@@ -1,0 +1,13 @@
+<numero de linhas do labirinto> <numero de colunas do labirinto>
+<linha 0>
+<linha 1>
+<linha 2>
+(...)
+<número de itens>
+<linha item 0> <coluna item 0> <valor item 0> <peso do item 0>
+<linha item 1> <coluna item 1> <valor item 1> <peso do item 1>
+<linha item 2> <coluna item 2> <valor item 2> <peso do item 2>
+(...)
+<capacidade da mochila>
+<linha posição de partida> <coluna posição de partida>
+<linha posição de destino> <coluna posição de destino>

@@ -1,0 +1,221 @@
+﻿f(n) = teta(g(n))  é limite "justo"
+
+f(n) = O(g(n)) é o limite superior
+
+f(n) = omega(g(n)) é o limite inferior
+
+
+
+T(n) = 5n+27 = teta(n) preciso determinar c1, c2 e n0, de modo a satisfazer a definição
+
+
+0<=c1*n<=5n+27<=c2*n    p/ todo n>=n0
+
+
+
+Fixar c1 e c2 e deixar n livre para poder achar um número válido.
+
+
+Escolher c1 e c2 válidos(conscientes).
+
+
+
+c1 = 4
+
+c2 = 6
+0
+n0 = ?
+0 <= 4n <= 5n+27 <= 6n;
+
+
+
+A-
+
+4n <= 5n+27
+
+n+27 >= 0
+
+
+n >= -27
+
+
+tbm vale para n >= 0;
+
+
+
+B-
+
+
+5n+27 <= 6n
+
+
+27 <= n
+
+
+n >= 27
+
+
+
+A e B são verdadeiras p/ n >= 27;
+
+
+c1 = 4,
+c2 = 6, 
+n0 >= 27;
+
+
+
+---------------------------------
+
+
+
+T(n)=(sqrt(n,2))/2 - 3n = teta(g(sqrt(n,2)))
+
+
+c1 = 1/4
+
+c2 = 1
+
+n0 = ?
+
+
+
+0 <= (sqrt(n,2))/4 <= (sqrt(n,2))/2 - 3n <= sqrt(n,2)
+
+
+
+A-
+
+
+(sqrt(n,2))/4 <= (sqrt(n,2))/2 - 3n
+
+
+(sqrt(n,2))/2 - (sqrt(n,2))/4 - 3n >= 0
+
+
+2*(sqrt(n,2))/4 - (sqrt(n,2))/4 - 3n >= 0
+
+
+4*((sqrt(n,2))/4 - 3n) >= 0*4
+
+
+sqrt(n,2) - 12n >= 0
+
+
+n(n-12) >= 0
+
+
+
+
+(i) n <= 0  e n-12 <= 0    
+n <= 12
+
+
+
+
+(ii) n >= 0 e n-12 >= 0    
+n >= 12
+
+
+----------
+
+A é verdade p/ n >= 12
+
+----------
+
+
+
+B- 
+
+
+(sqrt(n,2))/2 - 3n <= sqrt(n,2)
+
+
+-sqrt(n,2) - (sqrt(n,2))/2 + 3n >= 0
+
+
+2*((sqrt(n,2))/2 + 3n) >= 0*2
+
+
+sqrt(n,2) + 6n >= 0
+
+n(n+6) >= 0
+
+
+
+----------
+
+B é verdade p/ n >= 0
+
+----------
+
+
+
+c1 = 1/4
+
+c2 = 1
+
+n0 = 12
+
+
+
+
+T(n) = 6*(sqrt(n,3)) = teta(sqrt(n,2))?
+Determinar certos valores que batem com a outra teta. 
+(Outra forma é determinar um número impossível que ocorra entre eles)
+
+
+Tentemos mostrar que 6*(sqrt(n,3)) = teta(sqrt(n,2));
+
+
+
+0 <= c1*sqrt(n,2) <= 6*(sqrt(n,3)) <= c2*sqrt(n,2)
+
+
+A-
+
+
+
+c1*sqrt(n,2) <= 6*sqrt(n,3)
+6*sqrt(n,3) - c1*sqrt(n,2) >= 0
+
+
+(sqrt(n,2))*(6n-c1) >= 0
+
+
+
+sqrt(n,2) >= 0;
+
+
+6n >= c1     
+
+n >= c1/6;  
+
+Independente do c1 que eu escolha, a desigualdade é válida.
+
+
+
+B-
+
+
+6*sqrt(n,3) <= c2*sqrt(n,2)
+c2*sqrt(n,2) - 6*sqrt(n,2) >= 0
+
+
+sqrt(n,2)*(c2-6n) >= 0
+
+sqrt(n,2) >= 0
+
+
+
+c2 - 6n >= 0
+
+
+c2 >= 6n
+
+
+6n <= c2;        
+
+n <= c2/6; --> contradição, pois não satisfaz a segunda condição. 
+
+Mostrar como a função não pertence a alguma categoria.

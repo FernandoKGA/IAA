@@ -1,0 +1,2 @@
+selection sort =   (n²-n)/2        (Utiliza soma de P.A.)
+
